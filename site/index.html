@@ -1,15 +1,107 @@
 <html>
-    <head>
-        <title>Revol</title>
-        <link rel="icon" type="image/x-icon" href="../assets/Revol_favi.svg">
-        <style></style>
-    </head>
-    <body>
-        <h1>
-            Revol Bowl
-        </h1>
-        <p> 
-            Come back soon updates being worked on currently.
-        </p>
-    </body>
+
+<head>
+    <title>Revol</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Revol_favi_light.svg">
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            overscroll-behavior: none;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            margin: 0;
+            width: 100%;
+            height: 150px;
+            background-color: #9ece9a;
+        }
+
+        #title {
+            font-weight: bolder;
+            background-image: url("../assets/RevolTitle.png");
+            margin: auto;
+            height: 74px;
+            width: 268px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #header h1 {
+            margin: 0px;
+        }
+
+        #bar {
+            width: 100%;
+            height: 10px;
+            background-color: #077187;
+        }
+
+        #body {}
+
+        #mainlogo {
+            width: 500px;
+            height: 457.45px;
+            margin: auto;
+        }
+        #circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #caption {
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 20pt;
+            color: #077187;
+        }
+        #footer{
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            background-color: #9ece9a;
+            display: flex;
+            justify-content: flex-end;
+        }
+        #copyright{
+            color: #40531b;
+            text-align: end;
+        }
+        #copyright p{
+            font-size: 8pt;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <br><br>
+        <div id="title"></div>
+    </div>
+    <div id="bar"></div>
+    <div id="body">
+        <br><br>
+        <div id="circle">
+            <div id="mainlogo"><img src="../assets/Revol_favi_dark.svg" alt="Revol Logo"></div>
+        </div>
+    </div>
+    <div id="caption">
+        <h1>A Better Bowl</h1>
+        <h2>Saves you Time Packing, Stores Easily, Indestructable.</h2>
+    </div>
+    <div id="footer">
+        <div id="copyright"><p>All rights Reserved.</p>
+        <p>Copyright Revol.</p>
+        <p>Gangwa Labs LLC.</p>
+    </div>
+    </div>
+</body>
+
 </html>
