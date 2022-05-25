@@ -8,6 +8,7 @@
             padding: 0;
             margin: 0;
             overscroll-behavior: none;
+            background-color: #9ece9a;
         }
 
         body {
@@ -24,7 +25,7 @@
 
         #title {
             font-weight: bolder;
-            background-image: url("../assets/RevolTitle.png");
+            background-image: url("assets/RevolTitle.png");
             margin: auto;
             height: 74px;
             width: 268px;
@@ -36,12 +37,6 @@
             margin: 0px;
         }
 
-        #bar {
-            width: 100%;
-            height: 10px;
-            background-color: #077187;
-        }
-
         #body {}
 
         #mainlogo {
@@ -49,33 +44,131 @@
             height: 457.45px;
             margin: auto;
         }
-        #circle{
+
+        #circle {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         #caption {
             text-align: center;
             font-family: Helvetica;
             font-size: 20pt;
-            color: #077187;
+            color: whitesmoke;
         }
-        #footer{
+
+        #footer {
             width: 100%;
             height: 50px;
-            position: absolute;
+            position: relative;
             bottom: 0px;
             background-color: #9ece9a;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
         }
-        #copyright{
-            color: #40531b;
-            text-align: end;
+
+        #copyright {
+            color: white;
+            text-align: center;
         }
-        #copyright p{
+
+        #copyright p {
             font-size: 8pt;
             margin: 5px;
+        }
+
+        #dash {
+            margin: auto;
+            width: 30%;
+        }
+
+        #dash hr {
+            border: none;
+            height: 10px;
+            background-color: #074f57;
+            border-radius: 4px;
+        }
+
+        #checkerGrid {
+            background-color: #40531b;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap;
+            height: 100vw;
+        }
+
+        .checkerBox {
+            flex-grow: 1;
+            width: 50%;
+            height: 50%;
+            background-color: #074f57;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checkerInfo {
+            display: flex;
+            width: 80%;
+            height: 80%;
+        }
+
+        .checkerInfo img {
+            width: 100%;
+        }
+
+        #box1 {
+            background-color: #9ece9a;
+            /* border: solid #074f57 2px; */
+            border-bottom: none;
+            border-left: none;
+            border-bottom-right-radius: 20%;
+        }
+
+        #box2 {
+            color: #9ece9a;
+            font-size: 40pt;
+            border-bottom-left-radius: 20%;
+        }
+
+        #topQuote {
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        #bottomQuote {
+            display: flex;
+            justify-content: flex-end;
+            text-align: end;
+            width: 100%;
+        }
+
+        #quoteBox1 {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+        #box3{
+            color: #9ece9a;
+            font-size: 40pt;
+            border-top-right-radius: 20%;
+        }
+        #quoteBox2 {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        #box4{
+            background-color: #9ece9a;
+            border-top-left-radius: 20%;
+        }
+        #topQuoteLower{
+            width: 100%;
+            justify-content: flex-end;
+            text-align: right;
+        }
+        #bottomQuoteLower{
+            width: 80%;
         }
     </style>
 </head>
@@ -85,22 +178,59 @@
         <br><br>
         <div id="title"></div>
     </div>
-    <div id="bar"></div>
     <div id="body">
         <br><br>
         <div id="circle">
-            <div id="mainlogo"><img src="../assets/Revol_favi_dark.svg" alt="Revol Logo"></div>
+            <div id="mainlogo"><img src="assets/Revol_favi_dark.svg" alt="Revol Logo"></div>
         </div>
     </div>
+    <br>
     <div id="caption">
         <h1>A Better Bowl</h1>
         <h2>Saves you Time Packing, Stores Easily, Indestructable.</h2>
+        <p> - coming summer 2022 - </p>
+    </div>
+    <div id="dash">
+        <hr>
+    </div>
+    <br>
+    <br>
+    <div id="checkerGrid">
+        <div class="checkerBox" id="box1">
+            <div class="checkerInfo">
+                <img src="assets/revolrender.png" alt="revolrender">
+            </div>
+        </div>
+        <div class="checkerBox" id="box2">
+            <div class="checkerInfo" id="quoteBox1">
+                <div id="topQuote">
+                    <h2>Pack then Stack with Modular Design.</h2>
+                </div>
+                <div id="bottomQuote">
+                    <div style="width: 70%;">
+                        <h3>Magnetically Attach Stacks for Secure Attachment.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkerBox" id="box3">
+            <div class="checkerInfo" id="quoteBox2">
+                <div id="topQuoteLower"><h2>Indestructable Materials.</h2></div>
+                <div id="bottomQuoteLower"><h1>Meshed for Cleaning Ease.</h1></div>
+            </div>
+        </div>
+        <div class="checkerBox" id="box4">
+            <div class="checkerInfo">
+                <img src="assets/singleRender.png" alt="single render of Revol">
+            </div>
+        </div>
     </div>
     <div id="footer">
-        <div id="copyright"><p>All rights Reserved.</p>
-        <p>Copyright Revol.</p>
-        <p>Gangwa Labs LLC.</p>
-    </div>
+        <div id="copyright">
+            <p>All rights Reserved.</p>
+            <p>Copyright Revol.</p>
+            <p style="margin-bottom: 0px;">Gangwa Labs LLC.</p>
+        </div>
     </div>
 </body>
 
